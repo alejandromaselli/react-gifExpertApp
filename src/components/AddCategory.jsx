@@ -1,7 +1,7 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 
-const AddCategory =({ setCategoris })=> {
-    
+const AddCategory = ({ setCategoris }) => {
+
     const [inputValue, setInputValue] = useState('');
 
     const handleInputChange = (e) => {
@@ -17,12 +17,12 @@ const AddCategory =({ setCategoris })=> {
         }
     };
 
-    return(
-        <form onSubmit={ handleSubmit }>
+    return (
+        <form onSubmit={handleSubmit}>
             <input
                 type="text"
-                value={ inputValue }
-                onChange={ handleInputChange }
+                value={inputValue}
+                onChange={handleInputChange}
             />
         </form>
     )
